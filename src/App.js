@@ -38,7 +38,7 @@ const theme = createMuiTheme({
     },
 });
 
-const entrypoint = 'https://vumartin.fr/parking/public/index.php/api';
+const entrypoint = 'https://vumartin.fr/parking/public/api';
 // const entrypoint = 'http://127.0.0.1:8000/api';
 
 const fetchHeaders = {'Authorization': `Bearer ${window.localStorage.getItem('token')}`};
