@@ -1,7 +1,7 @@
 import { AUTH_LOGIN, AUTH_LOGOUT, AUTH_ERROR, AUTH_CHECK } from 'react-admin';
 
 // Change this to be your own login check route.
-const login_uri = 'https://vumartin.fr/parking/public/api/login_check';
+const login_uri = 'https://vumartin.fr/api/login_check';
 // const login_uri = 'http://127.0.0.1:8000/api/login_check';
 
 export default (type, params) => {
