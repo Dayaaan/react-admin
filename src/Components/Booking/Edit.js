@@ -1,5 +1,5 @@
 import React from 'react';
-import { ReferenceField, TextField, BooleanInput, Edit, SimpleForm, DisabledInput, TextInput, DateInput } from 'react-admin';
+import { ReferenceField, TextField, NumberInput, BooleanInput, Edit, SimpleForm, DisabledInput, TextInput, DateInput } from 'react-admin';
 
 export const BookingEdit = (props) => (
     <Edit {...props}>
@@ -17,7 +17,7 @@ export const BookingEdit = (props) => (
             <TextInput source="numberVolAller" label="Numero de vol aller"/>
             <TextInput source="numberVolRetour" label="Numéro de vol retour"/>
             <TextInput source="place" label="Ou se trouve la voiture ?"/>
-            <TextInput source="pax" label="Nombre de PAX"/>
+            <NumberInput source="pax" label="Nombre de PAX"/>
             <TextInput source="advantages" label="Options suplémentaires"/>
             <TextInput source="comment" label="Commentaire"/>
             <BooleanInput label="Payé ?" source="isPaid"/>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ReferenceField, BooleanField, Show, SimpleShowLayout, TextField, DateField, EditButton } from 'react-admin';
+import { ReferenceField, NumberField, BooleanField, Show, SimpleShowLayout, TextField, DateField, EditButton } from 'react-admin';
 
 export const BookingShow = (props) => (
     <Show { ...props }>
@@ -21,7 +21,7 @@ export const BookingShow = (props) => (
             <TextField source="numberVolAller" label="NUMERO VOL ALLER"/>
             <TextField source="numberVolRetour" label="NUMERO VOL RETOUR"/>
             <TextField source="place" label="PLACE"/>
-            <TextField source="pax" label="PAX"/>
+            <NumberField source="pax" label="PAX"/>
             <TextField source="amount" label="PRIX"/>
             <ReferenceField source="payment" reference="payments" label="PAIEMENT">
                 <TextField source="title" />
