@@ -5,7 +5,7 @@ export const BookingCreate = (props) => (
     <Create { ...props }>
         <SimpleForm>
             <ReferenceInput source="customer" reference="customers">
-               <SelectInput optionText="lastName" />
+               <SelectInput optionText="email" />
             </ReferenceInput>
             <ReferenceInput source="parking" reference="parkings">
                <SelectInput optionText="title" />
