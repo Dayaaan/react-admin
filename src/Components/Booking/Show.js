@@ -21,11 +21,14 @@ export const BookingShow = (props) => (
             <TextField source="numberVolAller" label="NUMERO VOL ALLER"/>
             <TextField source="numberVolRetour" label="NUMERO VOL RETOUR"/>
             <TextField source="place" label="PLACE"/>
+            <TextField source="pax" label="PAX"/>
             <TextField source="amount" label="PRIX"/>
             <ReferenceField source="payment" reference="payments" label="PAIEMENT">
                 <TextField source="title" />
             </ReferenceField>
             <BooleanField source="isPaid" label="PAYER?"/>
+            <TextField source="advantages" label="OPTIONS"/>
+            <TextField source="comment" label="COMMENTAIRE"/>
             <EditButton />
         </SimpleShowLayout>
     </Show>
