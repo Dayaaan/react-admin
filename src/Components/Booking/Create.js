@@ -19,6 +19,9 @@ export const BookingCreate = (props) => (
             <TextInput source="numberVolAller" label="NUMERO VOL ALLER"/>
             <TextInput source="numberVolRetour" label="NUMERO VOL RETOUR"/>
             <TextInput source="place" label="PLACE ?"/>
+            <TextInput source="pax" label="Nombre de PAX"/>
+            <TextInput source="advantages" label="OPTIONS"/>
+            <TextInput source="comment" label="COMMENT"/>
             <NumberInput source="amount" label="PRIX" />
             <BooleanInput source="isPaid" label="Payé ?"/>
             <ReferenceInput source="payment" reference="payments">
